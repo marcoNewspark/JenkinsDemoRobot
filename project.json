@@ -47,6 +47,11 @@
         "editingStatus": "InProgress",
         "testCaseId": "f88771a9-bd0a-4cdf-9121-471b3fff7423",
         "fileName": "TestCases\\TestCase - CheckAndCreateFolder.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a1dd7f72-4ec6-4314-b01e-bef45508b5ab",
+        "fileName": "TestCase - Main.xaml"
       }
     ],
     "modernBehavior": false
