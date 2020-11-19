@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('hi') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/marcoNewspark/JenkinsDemoRobot'
+            }
+        }
+        stage('Hello') {
+            steps {
+                UiPathPack(  outputPath: 'C:\\a\\buildOutput', projectJsonPath: 'project.json', version: AutoVersion())
+            }
+        }
+        stage('Deploy') {
+            steps {
+                UiPathDeploy(credentials: Token(accountName: 'newspark', credentialsId: '8DEv1AMNXczW3y4U15LL3jYf62jK93n5'), environments: '', folderName: 'JenkinsDemo', orchestratorAddress: 'https://cloud.uipath.com/newspark/Default', orchestratorTenant: 'Default', packagePath: 'C:\\a\\buildOutput\\JenkinsDemoRobot.1.0.59491577.nupkg')
+                
+            }
+        }
+
+    }
+}

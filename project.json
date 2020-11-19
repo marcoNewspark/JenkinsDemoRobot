@@ -57,14 +57,6 @@
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
-  "entryPoints": [
-    {
-      "filePath": "Main.xaml",
-      "uniqueId": "0b04e59e-9bad-4060-9b18-e3e40578e05e",
-      "input": [],
-      "output": []
-    }
-  ],
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {}
