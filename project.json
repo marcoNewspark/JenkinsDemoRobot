@@ -39,12 +39,12 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "4737559a-a631-4227-9b75-6089616ea953",
         "fileName": "TestCases\\TestCase - GenerateFileName.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "f88771a9-bd0a-4cdf-9121-471b3fff7423",
         "fileName": "TestCases\\TestCase - CheckAndCreateFolder.xaml"
       },
