@@ -6,6 +6,7 @@
     "UiPath.Excel.Activities": "[2.9.3]",
     "UiPath.Mail.Activities": "[1.9.3]",
     "UiPath.System.Activities": "[20.10.1]",
+    "UiPath.Testing.Activities": "[1.2.4]",
     "UiPath.UIAutomation.Activities": "[20.10.6]"
   },
   "webServices": [],
@@ -36,7 +37,18 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4737559a-a631-4227-9b75-6089616ea953",
+        "fileName": "TestCases\\TestCase - GenerateFileName.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f88771a9-bd0a-4cdf-9121-471b3fff7423",
+        "fileName": "TestCases\\TestCase - CheckAndCreateFolder.xaml"
+      }
+    ],
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
