@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label "UiPath"}
 
         // Environment Variables
         environment {
