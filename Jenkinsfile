@@ -3,8 +3,7 @@ pipeline {
 
         // Environment Variables
         environment {
-        MAJOR = '1'
-        MINOR = '0'
+        
         //Orchestrator Services
         UIPATH_ORCH_URL = "https://cloud.uipath.com/"
         UIPATH_ORCH_LOGICAL_NAME = "newspark"
@@ -47,14 +46,20 @@ pipeline {
         }
 
          // Deploy Stages
-        stage('Deploy to UAT') {
+        stage('Deploy to FAT') {
             steps {
-                echo "Deploying to UAT "
+                echo "Deploying to FAT "
 
             }
         }
-
-
+		
+		stage('OK to deploy to UAT? ) {
+			steps {
+				input "Deploy to UAT?"
+			}
+		}
+		
+		
          // Deploy to Production Step
         stage('Deploy to Production') {
             steps {
