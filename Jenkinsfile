@@ -33,7 +33,7 @@ pipeline {
                 UiPathPack (
                       outputPath: "Output\\${env.BUILD_NUMBER}",
                       projectJsonPath: "project.json",
-                      version: [$class: 'ManualVersionEntry', version: "${MAJOR}.${MINOR}.${env.BUILD_NUMBER}"],
+                      version: autoVersion(),
                       useOrchestrator: false
         )
             }
