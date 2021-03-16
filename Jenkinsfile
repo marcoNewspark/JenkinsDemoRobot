@@ -53,7 +53,7 @@ pipeline {
             }
         }
 		
-		stage('OK to deploy to UAT? ) {
+		stage('OK to deploy to UAT?') {
 			steps {
 				input "Deploy to UAT?"
 			}
